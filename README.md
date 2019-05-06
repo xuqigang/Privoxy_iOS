@@ -1,2 +1,3 @@
 # Privoxy_iOS
-这个一个privoxy iOS版，
+Privoxy是一款带过滤功能的代理服务器，针对HTTP、HTTPS协议。通过Privoxy的过滤功能，用户可以保护隐私、对网页内容进行过滤、管理cookies，以及拦阻各种广告等。Privoxy可以用作单机，也可以应用到多用户的网络。
+本项目将其整理成一个iOS版本，直接运行该项目，您的iOS手机即可成为一个代理服务器

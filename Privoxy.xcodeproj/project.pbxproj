@@ -85,6 +85,7 @@
 		7BDF80352280278B009DFDCC /* jbsockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FEE2280278B009DFDCC /* jbsockets.c */; };
 		7BDF80362280278B009DFDCC /* ssplit.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FEF2280278B009DFDCC /* ssplit.c */; };
 		7BDF8039228027AD009DFDCC /* ProxyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8038228027AD009DFDCC /* ProxyManager.m */; };
+		7BDF803B22803521009DFDCC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF803A22803521009DFDCC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,6 +214,7 @@
 		7BDF7FF02280278B009DFDCC /* loadcfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadcfg.h; sourceTree = "<group>"; };
 		7BDF8037228027AD009DFDCC /* ProxyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyManager.h; sourceTree = "<group>"; };
 		7BDF8038228027AD009DFDCC /* ProxyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyManager.m; sourceTree = "<group>"; };
+		7BDF803A22803521009DFDCC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 		7BDF7F6322802718009DFDCC /* Privoxy */ = {
 			isa = PBXGroup;
 			children = (
+				7BDF803A22803521009DFDCC /* README.md */,
 				7BDF8037228027AD009DFDCC /* ProxyManager.h */,
 				7BDF8038228027AD009DFDCC /* ProxyManager.m */,
 				7BDF7F8822802764009DFDCC /* lib */,
@@ -515,6 +518,7 @@
 				7BDF800C2280278B009DFDCC /* edit-actions-list-section in Resources */,
 				7BDF80142280278B009DFDCC /* forwarding-failed in Resources */,
 				7BDF80112280278B009DFDCC /* connect-failed in Resources */,
+				7BDF803B22803521009DFDCC /* README.md in Resources */,
 				7BDF7FFD2280278B009DFDCC /* edit-actions-remove-url-form in Resources */,
 				7BDF7F6E22802719009DFDCC /* Assets.xcassets in Resources */,
 				7BDF80152280278B009DFDCC /* untrusted in Resources */,
