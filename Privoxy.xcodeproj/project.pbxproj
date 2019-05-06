@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BDF7F6622802718009DFDCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7F6522802718009DFDCC /* AppDelegate.m */; };
+		7BDF7F6922802718009DFDCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7F6822802718009DFDCC /* ViewController.m */; };
+		7BDF7F6C22802718009DFDCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F6A22802718009DFDCC /* Main.storyboard */; };
+		7BDF7F6E22802719009DFDCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F6D22802719009DFDCC /* Assets.xcassets */; };
+		7BDF7F7122802719009DFDCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F6F22802719009DFDCC /* LaunchScreen.storyboard */; };
+		7BDF7F7422802719009DFDCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7F7322802719009DFDCC /* main.m */; };
+		7BDF7F7E22802719009DFDCC /* PrivoxyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7F7D22802719009DFDCC /* PrivoxyUITests.m */; };
+		7BDF7FF12280278B009DFDCC /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7F8B2280278B009DFDCC /* list.c */; };
+		7BDF7FF22280278B009DFDCC /* pcrs.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7F8C2280278B009DFDCC /* pcrs.c */; };
+		7BDF7FF32280278B009DFDCC /* miscutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7F8F2280278B009DFDCC /* miscutil.c */; };
+		7BDF7FF42280278B009DFDCC /* fuzz.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7F902280278B009DFDCC /* fuzz.c */; };
+		7BDF7FF52280278B009DFDCC /* configs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F962280278B009DFDCC /* configs.txt */; };
+		7BDF7FF62280278B009DFDCC /* default.filter in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F972280278B009DFDCC /* default.filter */; };
+		7BDF7FF72280278B009DFDCC /* config in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F982280278B009DFDCC /* config */; };
+		7BDF7FF82280278B009DFDCC /* default.action in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F992280278B009DFDCC /* default.action */; };
+		7BDF7FF92280278B009DFDCC /* edit-actions-for-url in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F9B2280278B009DFDCC /* edit-actions-for-url */; };
+		7BDF7FFA2280278B009DFDCC /* cgi-error-modified in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F9C2280278B009DFDCC /* cgi-error-modified */; };
+		7BDF7FFB2280278B009DFDCC /* show-status-file in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F9D2280278B009DFDCC /* show-status-file */; };
+		7BDF7FFC2280278B009DFDCC /* no-such-domain in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F9E2280278B009DFDCC /* no-such-domain */; };
+		7BDF7FFD2280278B009DFDCC /* edit-actions-remove-url-form in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7F9F2280278B009DFDCC /* edit-actions-remove-url-form */; };
+		7BDF7FFE2280278B009DFDCC /* connection-timeout in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA02280278B009DFDCC /* connection-timeout */; };
+		7BDF7FFF2280278B009DFDCC /* cgi-error-disabled in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA12280278B009DFDCC /* cgi-error-disabled */; };
+		7BDF80002280278B009DFDCC /* url-info-osd.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA22280278B009DFDCC /* url-info-osd.xml */; };
+		7BDF80012280278B009DFDCC /* show-status in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA32280278B009DFDCC /* show-status */; };
+		7BDF80022280278B009DFDCC /* mod-title in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA42280278B009DFDCC /* mod-title */; };
+		7BDF80032280278B009DFDCC /* edit-actions-for-url-filter in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA52280278B009DFDCC /* edit-actions-for-url-filter */; };
+		7BDF80042280278B009DFDCC /* cgi-error-404 in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA62280278B009DFDCC /* cgi-error-404 */; };
+		7BDF80052280278B009DFDCC /* edit-actions-add-url-form in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA72280278B009DFDCC /* edit-actions-add-url-form */; };
+		7BDF80062280278B009DFDCC /* cgi-style.css in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA82280278B009DFDCC /* cgi-style.css */; };
+		7BDF80072280278B009DFDCC /* toggle-mini in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FA92280278B009DFDCC /* toggle-mini */; };
+		7BDF80082280278B009DFDCC /* edit-actions-list-url in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FAA2280278B009DFDCC /* edit-actions-list-url */; };
+		7BDF80092280278B009DFDCC /* cgi-error-file-read-only in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FAB2280278B009DFDCC /* cgi-error-file-read-only */; };
+		7BDF800A2280278B009DFDCC /* show-request in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FAC2280278B009DFDCC /* show-request */; };
+		7BDF800B2280278B009DFDCC /* show-url-info in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FAD2280278B009DFDCC /* show-url-info */; };
+		7BDF800C2280278B009DFDCC /* edit-actions-list-section in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FAE2280278B009DFDCC /* edit-actions-list-section */; };
+		7BDF800D2280278B009DFDCC /* default in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FAF2280278B009DFDCC /* default */; };
+		7BDF800E2280278B009DFDCC /* cgi-error-parse in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB02280278B009DFDCC /* cgi-error-parse */; };
+		7BDF800F2280278B009DFDCC /* cgi-error-bad-param in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB12280278B009DFDCC /* cgi-error-bad-param */; };
+		7BDF80102280278B009DFDCC /* no-server-data in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB22280278B009DFDCC /* no-server-data */; };
+		7BDF80112280278B009DFDCC /* connect-failed in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB32280278B009DFDCC /* connect-failed */; };
+		7BDF80122280278B009DFDCC /* toggle in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB42280278B009DFDCC /* toggle */; };
+		7BDF80132280278B009DFDCC /* edit-actions-list in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB52280278B009DFDCC /* edit-actions-list */; };
+		7BDF80142280278B009DFDCC /* forwarding-failed in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB62280278B009DFDCC /* forwarding-failed */; };
+		7BDF80152280278B009DFDCC /* untrusted in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB72280278B009DFDCC /* untrusted */; };
+		7BDF80162280278B009DFDCC /* edit-actions-url-form in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB82280278B009DFDCC /* edit-actions-url-form */; };
+		7BDF80172280278B009DFDCC /* mod-support-and-service in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FB92280278B009DFDCC /* mod-support-and-service */; };
+		7BDF80182280278B009DFDCC /* mod-unstable-warning in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FBA2280278B009DFDCC /* mod-unstable-warning */; };
+		7BDF80192280278B009DFDCC /* mod-local-help in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FBB2280278B009DFDCC /* mod-local-help */; };
+		7BDF801A2280278B009DFDCC /* edit-actions-list-button in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FBC2280278B009DFDCC /* edit-actions-list-button */; };
+		7BDF801B2280278B009DFDCC /* blocked in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FBD2280278B009DFDCC /* blocked */; };
+		7BDF801C2280278B009DFDCC /* client-tags in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FBE2280278B009DFDCC /* client-tags */; };
+		7BDF801D2280278B009DFDCC /* cgi-error-file in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FBF2280278B009DFDCC /* cgi-error-file */; };
+		7BDF801E2280278B009DFDCC /* user.filter in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FC02280278B009DFDCC /* user.filter */; };
+		7BDF801F2280278B009DFDCC /* trust in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FC12280278B009DFDCC /* trust */; };
+		7BDF80202280278B009DFDCC /* match-all.action in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FC22280278B009DFDCC /* match-all.action */; };
+		7BDF80212280278B009DFDCC /* user.action in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF7FC32280278B009DFDCC /* user.action */; };
+		7BDF80222280278B009DFDCC /* parsers.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FC62280278B009DFDCC /* parsers.c */; };
+		7BDF80232280278B009DFDCC /* loadcfg.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FC82280278B009DFDCC /* loadcfg.c */; };
+		7BDF80242280278B009DFDCC /* filters.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FC92280278B009DFDCC /* filters.c */; };
+		7BDF80252280278B009DFDCC /* cgi.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FCB2280278B009DFDCC /* cgi.c */; };
+		7BDF80262280278B009DFDCC /* loaders.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FCF2280278B009DFDCC /* loaders.c */; };
+		7BDF80272280278B009DFDCC /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FD02280278B009DFDCC /* encode.c */; };
+		7BDF80282280278B009DFDCC /* errlog.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FD22280278B009DFDCC /* errlog.c */; };
+		7BDF80292280278B009DFDCC /* gateway.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FD52280278B009DFDCC /* gateway.c */; };
+		7BDF802A2280278B009DFDCC /* actions.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FD62280278B009DFDCC /* actions.c */; };
+		7BDF802B2280278B009DFDCC /* jcc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FD82280278B009DFDCC /* jcc.m */; };
+		7BDF802C2280278B009DFDCC /* urlmatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FD92280278B009DFDCC /* urlmatch.c */; };
+		7BDF802D2280278B009DFDCC /* pcre.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FDE2280278B009DFDCC /* pcre.m */; };
+		7BDF802E2280278B009DFDCC /* pcreposix.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FE12280278B009DFDCC /* pcreposix.c */; };
+		7BDF802F2280278B009DFDCC /* chartables.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FE22280278B009DFDCC /* chartables.c */; };
+		7BDF80302280278B009DFDCC /* study.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FE32280278B009DFDCC /* study.c */; };
+		7BDF80312280278B009DFDCC /* deanimate.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FE42280278B009DFDCC /* deanimate.c */; };
+		7BDF80322280278B009DFDCC /* cgisimple.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FE72280278B009DFDCC /* cgisimple.c */; };
+		7BDF80332280278B009DFDCC /* cgiedit.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FE82280278B009DFDCC /* cgiedit.c */; };
+		7BDF80342280278B009DFDCC /* client-tags.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FEC2280278B009DFDCC /* client-tags.c */; };
+		7BDF80352280278B009DFDCC /* jbsockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FEE2280278B009DFDCC /* jbsockets.c */; };
+		7BDF80362280278B009DFDCC /* ssplit.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF7FEF2280278B009DFDCC /* ssplit.c */; };
+		7BDF8039228027AD009DFDCC /* ProxyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8038228027AD009DFDCC /* ProxyManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BDF7F7A22802719009DFDCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BDF7F5922802718009DFDCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BDF7F6022802718009DFDCC;
+			remoteInfo = Privoxy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BDF7F6122802718009DFDCC /* Privoxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Privoxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDF7F6422802718009DFDCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BDF7F6522802718009DFDCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7BDF7F6722802718009DFDCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7BDF7F6822802718009DFDCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7BDF7F6B22802718009DFDCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BDF7F6D22802719009DFDCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BDF7F7022802719009DFDCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BDF7F7222802719009DFDCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDF7F7322802719009DFDCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BDF7F7922802719009DFDCC /* PrivoxyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivoxyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDF7F7D22802719009DFDCC /* PrivoxyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivoxyUITests.m; sourceTree = "<group>"; };
+		7BDF7F7F22802719009DFDCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDF7F8A2280278B009DFDCC /* actionlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = actionlist.h; sourceTree = "<group>"; };
+		7BDF7F8B2280278B009DFDCC /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		7BDF7F8C2280278B009DFDCC /* pcrs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcrs.c; sourceTree = "<group>"; };
+		7BDF7F8D2280278B009DFDCC /* urlmatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = urlmatch.h; sourceTree = "<group>"; };
+		7BDF7F8E2280278B009DFDCC /* jcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jcc.h; sourceTree = "<group>"; };
+		7BDF7F8F2280278B009DFDCC /* miscutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = miscutil.c; sourceTree = "<group>"; };
+		7BDF7F902280278B009DFDCC /* fuzz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fuzz.c; sourceTree = "<group>"; };
+		7BDF7F912280278B009DFDCC /* actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = actions.h; sourceTree = "<group>"; };
+		7BDF7F922280278B009DFDCC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		7BDF7F932280278B009DFDCC /* gateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gateway.h; sourceTree = "<group>"; };
+		7BDF7F942280278B009DFDCC /* acconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acconfig.h; sourceTree = "<group>"; };
+		7BDF7F962280278B009DFDCC /* configs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configs.txt; sourceTree = "<group>"; };
+		7BDF7F972280278B009DFDCC /* default.filter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default.filter; sourceTree = "<group>"; };
+		7BDF7F982280278B009DFDCC /* config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config; sourceTree = "<group>"; };
+		7BDF7F992280278B009DFDCC /* default.action */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default.action; sourceTree = "<group>"; };
+		7BDF7F9B2280278B009DFDCC /* edit-actions-for-url */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "edit-actions-for-url"; sourceTree = "<group>"; };
+		7BDF7F9C2280278B009DFDCC /* cgi-error-modified */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cgi-error-modified"; sourceTree = "<group>"; };
+		7BDF7F9D2280278B009DFDCC /* show-status-file */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "show-status-file"; sourceTree = "<group>"; };
+		7BDF7F9E2280278B009DFDCC /* no-such-domain */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "no-such-domain"; sourceTree = "<group>"; };
+		7BDF7F9F2280278B009DFDCC /* edit-actions-remove-url-form */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "edit-actions-remove-url-form"; sourceTree = "<group>"; };
+		7BDF7FA02280278B009DFDCC /* connection-timeout */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "connection-timeout"; sourceTree = "<group>"; };
+		7BDF7FA12280278B009DFDCC /* cgi-error-disabled */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cgi-error-disabled"; sourceTree = "<group>"; };
+		7BDF7FA22280278B009DFDCC /* url-info-osd.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "url-info-osd.xml"; sourceTree = "<group>"; };
+		7BDF7FA32280278B009DFDCC /* show-status */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "show-status"; sourceTree = "<group>"; };
+		7BDF7FA42280278B009DFDCC /* mod-title */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mod-title"; sourceTree = "<group>"; };
+		7BDF7FA52280278B009DFDCC /* edit-actions-for-url-filter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "edit-actions-for-url-filter"; sourceTree = "<group>"; };
+		7BDF7FA62280278B009DFDCC /* cgi-error-404 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cgi-error-404"; sourceTree = "<group>"; };
+		7BDF7FA72280278B009DFDCC /* edit-actions-add-url-form */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "edit-actions-add-url-form"; sourceTree = "<group>"; };
+		7BDF7FA82280278B009DFDCC /* cgi-style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "cgi-style.css"; sourceTree = "<group>"; };
+		7BDF7FA92280278B009DFDCC /* toggle-mini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "toggle-mini"; sourceTree = "<group>"; };
+		7BDF7FAA2280278B009DFDCC /* edit-actions-list-url */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "edit-actions-list-url"; sourceTree = "<group>"; };
+		7BDF7FAB2280278B009DFDCC /* cgi-error-file-read-only */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cgi-error-file-read-only"; sourceTree = "<group>"; };
+		7BDF7FAC2280278B009DFDCC /* show-request */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "show-request"; sourceTree = "<group>"; };
+		7BDF7FAD2280278B009DFDCC /* show-url-info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "show-url-info"; sourceTree = "<group>"; };
+		7BDF7FAE2280278B009DFDCC /* edit-actions-list-section */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "edit-actions-list-section"; sourceTree = "<group>"; };
+		7BDF7FAF2280278B009DFDCC /* default */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = default; sourceTree = "<group>"; };
+		7BDF7FB02280278B009DFDCC /* cgi-error-parse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cgi-error-parse"; sourceTree = "<group>"; };
+		7BDF7FB12280278B009DFDCC /* cgi-error-bad-param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cgi-error-bad-param"; sourceTree = "<group>"; };
+		7BDF7FB22280278B009DFDCC /* no-server-data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "no-server-data"; sourceTree = "<group>"; };
+		7BDF7FB32280278B009DFDCC /* connect-failed */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "connect-failed"; sourceTree = "<group>"; };
+		7BDF7FB42280278B009DFDCC /* toggle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toggle; sourceTree = "<group>"; };
+		7BDF7FB52280278B009DFDCC /* edit-actions-list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "edit-actions-list"; sourceTree = "<group>"; };
+		7BDF7FB62280278B009DFDCC /* forwarding-failed */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "forwarding-failed"; sourceTree = "<group>"; };
+		7BDF7FB72280278B009DFDCC /* untrusted */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = untrusted; sourceTree = "<group>"; };
+		7BDF7FB82280278B009DFDCC /* edit-actions-url-form */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "edit-actions-url-form"; sourceTree = "<group>"; };
+		7BDF7FB92280278B009DFDCC /* mod-support-and-service */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mod-support-and-service"; sourceTree = "<group>"; };
+		7BDF7FBA2280278B009DFDCC /* mod-unstable-warning */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mod-unstable-warning"; sourceTree = "<group>"; };
+		7BDF7FBB2280278B009DFDCC /* mod-local-help */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mod-local-help"; sourceTree = "<group>"; };
+		7BDF7FBC2280278B009DFDCC /* edit-actions-list-button */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "edit-actions-list-button"; sourceTree = "<group>"; };
+		7BDF7FBD2280278B009DFDCC /* blocked */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blocked; sourceTree = "<group>"; };
+		7BDF7FBE2280278B009DFDCC /* client-tags */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "client-tags"; sourceTree = "<group>"; };
+		7BDF7FBF2280278B009DFDCC /* cgi-error-file */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cgi-error-file"; sourceTree = "<group>"; };
+		7BDF7FC02280278B009DFDCC /* user.filter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = user.filter; sourceTree = "<group>"; };
+		7BDF7FC12280278B009DFDCC /* trust */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trust; sourceTree = "<group>"; };
+		7BDF7FC22280278B009DFDCC /* match-all.action */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "match-all.action"; sourceTree = "<group>"; };
+		7BDF7FC32280278B009DFDCC /* user.action */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = user.action; sourceTree = "<group>"; };
+		7BDF7FC42280278B009DFDCC /* cygwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cygwin.h; sourceTree = "<group>"; };
+		7BDF7FC52280278B009DFDCC /* strptime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strptime.h; sourceTree = "<group>"; };
+		7BDF7FC62280278B009DFDCC /* parsers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parsers.c; sourceTree = "<group>"; };
+		7BDF7FC72280278B009DFDCC /* deanimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deanimate.h; sourceTree = "<group>"; };
+		7BDF7FC82280278B009DFDCC /* loadcfg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loadcfg.c; sourceTree = "<group>"; };
+		7BDF7FC92280278B009DFDCC /* filters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filters.c; sourceTree = "<group>"; };
+		7BDF7FCA2280278B009DFDCC /* client-tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "client-tags.h"; sourceTree = "<group>"; };
+		7BDF7FCB2280278B009DFDCC /* cgi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cgi.c; sourceTree = "<group>"; };
+		7BDF7FCC2280278B009DFDCC /* jbsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jbsockets.h; sourceTree = "<group>"; };
+		7BDF7FCD2280278B009DFDCC /* ssplit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssplit.h; sourceTree = "<group>"; };
+		7BDF7FCE2280278B009DFDCC /* cgiedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgiedit.h; sourceTree = "<group>"; };
+		7BDF7FCF2280278B009DFDCC /* loaders.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loaders.c; sourceTree = "<group>"; };
+		7BDF7FD02280278B009DFDCC /* encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encode.c; sourceTree = "<group>"; };
+		7BDF7FD12280278B009DFDCC /* cgisimple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgisimple.h; sourceTree = "<group>"; };
+		7BDF7FD22280278B009DFDCC /* errlog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = errlog.c; sourceTree = "<group>"; };
+		7BDF7FD32280278B009DFDCC /* pcrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcrs.h; sourceTree = "<group>"; };
+		7BDF7FD42280278B009DFDCC /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		7BDF7FD52280278B009DFDCC /* gateway.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gateway.c; sourceTree = "<group>"; };
+		7BDF7FD62280278B009DFDCC /* actions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = actions.c; sourceTree = "<group>"; };
+		7BDF7FD72280278B009DFDCC /* miscutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miscutil.h; sourceTree = "<group>"; };
+		7BDF7FD82280278B009DFDCC /* jcc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jcc.m; sourceTree = "<group>"; };
+		7BDF7FD92280278B009DFDCC /* urlmatch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = urlmatch.c; sourceTree = "<group>"; };
+		7BDF7FDA2280278B009DFDCC /* project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = project.h; sourceTree = "<group>"; };
+		7BDF7FDC2280278B009DFDCC /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		7BDF7FDD2280278B009DFDCC /* pcreposix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcreposix.h; sourceTree = "<group>"; };
+		7BDF7FDE2280278B009DFDCC /* pcre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pcre.m; sourceTree = "<group>"; };
+		7BDF7FDF2280278B009DFDCC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		7BDF7FE02280278B009DFDCC /* pcre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre.h; sourceTree = "<group>"; };
+		7BDF7FE12280278B009DFDCC /* pcreposix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcreposix.c; sourceTree = "<group>"; };
+		7BDF7FE22280278B009DFDCC /* chartables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chartables.c; sourceTree = "<group>"; };
+		7BDF7FE32280278B009DFDCC /* study.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = study.c; sourceTree = "<group>"; };
+		7BDF7FE42280278B009DFDCC /* deanimate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deanimate.c; sourceTree = "<group>"; };
+		7BDF7FE52280278B009DFDCC /* parsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parsers.h; sourceTree = "<group>"; };
+		7BDF7FE62280278B009DFDCC /* errlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errlog.h; sourceTree = "<group>"; };
+		7BDF7FE72280278B009DFDCC /* cgisimple.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cgisimple.c; sourceTree = "<group>"; };
+		7BDF7FE82280278B009DFDCC /* cgiedit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cgiedit.c; sourceTree = "<group>"; };
+		7BDF7FE92280278B009DFDCC /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		7BDF7FEA2280278B009DFDCC /* loaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loaders.h; sourceTree = "<group>"; };
+		7BDF7FEB2280278B009DFDCC /* cgi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgi.h; sourceTree = "<group>"; };
+		7BDF7FEC2280278B009DFDCC /* client-tags.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "client-tags.c"; sourceTree = "<group>"; };
+		7BDF7FED2280278B009DFDCC /* filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filters.h; sourceTree = "<group>"; };
+		7BDF7FEE2280278B009DFDCC /* jbsockets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jbsockets.c; sourceTree = "<group>"; };
+		7BDF7FEF2280278B009DFDCC /* ssplit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssplit.c; sourceTree = "<group>"; };
+		7BDF7FF02280278B009DFDCC /* loadcfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadcfg.h; sourceTree = "<group>"; };
+		7BDF8037228027AD009DFDCC /* ProxyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyManager.h; sourceTree = "<group>"; };
+		7BDF8038228027AD009DFDCC /* ProxyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BDF7F5E22802718009DFDCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDF7F7622802719009DFDCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BDF7F5822802718009DFDCC = {
+			isa = PBXGroup;
+			children = (
+				7BDF7F6322802718009DFDCC /* Privoxy */,
+				7BDF7F7C22802719009DFDCC /* PrivoxyUITests */,
+				7BDF7F6222802718009DFDCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BDF7F6222802718009DFDCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF7F6122802718009DFDCC /* Privoxy.app */,
+				7BDF7F7922802719009DFDCC /* PrivoxyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BDF7F6322802718009DFDCC /* Privoxy */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF8037228027AD009DFDCC /* ProxyManager.h */,
+				7BDF8038228027AD009DFDCC /* ProxyManager.m */,
+				7BDF7F8822802764009DFDCC /* lib */,
+				7BDF7F6422802718009DFDCC /* AppDelegate.h */,
+				7BDF7F6522802718009DFDCC /* AppDelegate.m */,
+				7BDF7F6722802718009DFDCC /* ViewController.h */,
+				7BDF7F6822802718009DFDCC /* ViewController.m */,
+				7BDF7F6A22802718009DFDCC /* Main.storyboard */,
+				7BDF7F6D22802719009DFDCC /* Assets.xcassets */,
+				7BDF7F6F22802719009DFDCC /* LaunchScreen.storyboard */,
+				7BDF7F7222802719009DFDCC /* Info.plist */,
+				7BDF7F7322802719009DFDCC /* main.m */,
+			);
+			path = Privoxy;
+			sourceTree = "<group>";
+		};
+		7BDF7F7C22802719009DFDCC /* PrivoxyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF7F7D22802719009DFDCC /* PrivoxyUITests.m */,
+				7BDF7F7F22802719009DFDCC /* Info.plist */,
+			);
+			path = PrivoxyUITests;
+			sourceTree = "<group>";
+		};
+		7BDF7F8822802764009DFDCC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF7F892280278B009DFDCC /* Privoxy */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		7BDF7F892280278B009DFDCC /* Privoxy */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF7F8A2280278B009DFDCC /* actionlist.h */,
+				7BDF7F8B2280278B009DFDCC /* list.c */,
+				7BDF7F8C2280278B009DFDCC /* pcrs.c */,
+				7BDF7F8D2280278B009DFDCC /* urlmatch.h */,
+				7BDF7F8E2280278B009DFDCC /* jcc.h */,
+				7BDF7F8F2280278B009DFDCC /* miscutil.c */,
+				7BDF7F902280278B009DFDCC /* fuzz.c */,
+				7BDF7F912280278B009DFDCC /* actions.h */,
+				7BDF7F922280278B009DFDCC /* config.h */,
+				7BDF7F932280278B009DFDCC /* gateway.h */,
+				7BDF7F942280278B009DFDCC /* acconfig.h */,
+				7BDF7F952280278B009DFDCC /* config */,
+				7BDF7FC42280278B009DFDCC /* cygwin.h */,
+				7BDF7FC52280278B009DFDCC /* strptime.h */,
+				7BDF7FC62280278B009DFDCC /* parsers.c */,
+				7BDF7FC72280278B009DFDCC /* deanimate.h */,
+				7BDF7FC82280278B009DFDCC /* loadcfg.c */,
+				7BDF7FC92280278B009DFDCC /* filters.c */,
+				7BDF7FCA2280278B009DFDCC /* client-tags.h */,
+				7BDF7FCB2280278B009DFDCC /* cgi.c */,
+				7BDF7FCC2280278B009DFDCC /* jbsockets.h */,
+				7BDF7FCD2280278B009DFDCC /* ssplit.h */,
+				7BDF7FCE2280278B009DFDCC /* cgiedit.h */,
+				7BDF7FCF2280278B009DFDCC /* loaders.c */,
+				7BDF7FD02280278B009DFDCC /* encode.c */,
+				7BDF7FD12280278B009DFDCC /* cgisimple.h */,
+				7BDF7FD22280278B009DFDCC /* errlog.c */,
+				7BDF7FD32280278B009DFDCC /* pcrs.h */,
+				7BDF7FD42280278B009DFDCC /* list.h */,
+				7BDF7FD52280278B009DFDCC /* gateway.c */,
+				7BDF7FD62280278B009DFDCC /* actions.c */,
+				7BDF7FD72280278B009DFDCC /* miscutil.h */,
+				7BDF7FD82280278B009DFDCC /* jcc.m */,
+				7BDF7FD92280278B009DFDCC /* urlmatch.c */,
+				7BDF7FDA2280278B009DFDCC /* project.h */,
+				7BDF7FDB2280278B009DFDCC /* pcre */,
+				7BDF7FE42280278B009DFDCC /* deanimate.c */,
+				7BDF7FE52280278B009DFDCC /* parsers.h */,
+				7BDF7FE62280278B009DFDCC /* errlog.h */,
+				7BDF7FE72280278B009DFDCC /* cgisimple.c */,
+				7BDF7FE82280278B009DFDCC /* cgiedit.c */,
+				7BDF7FE92280278B009DFDCC /* encode.h */,
+				7BDF7FEA2280278B009DFDCC /* loaders.h */,
+				7BDF7FEB2280278B009DFDCC /* cgi.h */,
+				7BDF7FEC2280278B009DFDCC /* client-tags.c */,
+				7BDF7FED2280278B009DFDCC /* filters.h */,
+				7BDF7FEE2280278B009DFDCC /* jbsockets.c */,
+				7BDF7FEF2280278B009DFDCC /* ssplit.c */,
+				7BDF7FF02280278B009DFDCC /* loadcfg.h */,
+			);
+			path = Privoxy;
+			sourceTree = "<group>";
+		};
+		7BDF7F952280278B009DFDCC /* config */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF7F962280278B009DFDCC /* configs.txt */,
+				7BDF7F972280278B009DFDCC /* default.filter */,
+				7BDF7F982280278B009DFDCC /* config */,
+				7BDF7F992280278B009DFDCC /* default.action */,
+				7BDF7F9A2280278B009DFDCC /* templates */,
+				7BDF7FC02280278B009DFDCC /* user.filter */,
+				7BDF7FC12280278B009DFDCC /* trust */,
+				7BDF7FC22280278B009DFDCC /* match-all.action */,
+				7BDF7FC32280278B009DFDCC /* user.action */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		7BDF7F9A2280278B009DFDCC /* templates */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF7F9B2280278B009DFDCC /* edit-actions-for-url */,
+				7BDF7F9C2280278B009DFDCC /* cgi-error-modified */,
+				7BDF7F9D2280278B009DFDCC /* show-status-file */,
+				7BDF7F9E2280278B009DFDCC /* no-such-domain */,
+				7BDF7F9F2280278B009DFDCC /* edit-actions-remove-url-form */,
+				7BDF7FA02280278B009DFDCC /* connection-timeout */,
+				7BDF7FA12280278B009DFDCC /* cgi-error-disabled */,
+				7BDF7FA22280278B009DFDCC /* url-info-osd.xml */,
+				7BDF7FA32280278B009DFDCC /* show-status */,
+				7BDF7FA42280278B009DFDCC /* mod-title */,
+				7BDF7FA52280278B009DFDCC /* edit-actions-for-url-filter */,
+				7BDF7FA62280278B009DFDCC /* cgi-error-404 */,
+				7BDF7FA72280278B009DFDCC /* edit-actions-add-url-form */,
+				7BDF7FA82280278B009DFDCC /* cgi-style.css */,
+				7BDF7FA92280278B009DFDCC /* toggle-mini */,
+				7BDF7FAA2280278B009DFDCC /* edit-actions-list-url */,
+				7BDF7FAB2280278B009DFDCC /* cgi-error-file-read-only */,
+				7BDF7FAC2280278B009DFDCC /* show-request */,
+				7BDF7FAD2280278B009DFDCC /* show-url-info */,
+				7BDF7FAE2280278B009DFDCC /* edit-actions-list-section */,
+				7BDF7FAF2280278B009DFDCC /* default */,
+				7BDF7FB02280278B009DFDCC /* cgi-error-parse */,
+				7BDF7FB12280278B009DFDCC /* cgi-error-bad-param */,
+				7BDF7FB22280278B009DFDCC /* no-server-data */,
+				7BDF7FB32280278B009DFDCC /* connect-failed */,
+				7BDF7FB42280278B009DFDCC /* toggle */,
+				7BDF7FB52280278B009DFDCC /* edit-actions-list */,
+				7BDF7FB62280278B009DFDCC /* forwarding-failed */,
+				7BDF7FB72280278B009DFDCC /* untrusted */,
+				7BDF7FB82280278B009DFDCC /* edit-actions-url-form */,
+				7BDF7FB92280278B009DFDCC /* mod-support-and-service */,
+				7BDF7FBA2280278B009DFDCC /* mod-unstable-warning */,
+				7BDF7FBB2280278B009DFDCC /* mod-local-help */,
+				7BDF7FBC2280278B009DFDCC /* edit-actions-list-button */,
+				7BDF7FBD2280278B009DFDCC /* blocked */,
+				7BDF7FBE2280278B009DFDCC /* client-tags */,
+				7BDF7FBF2280278B009DFDCC /* cgi-error-file */,
+			);
+			path = templates;
+			sourceTree = "<group>";
+		};
+		7BDF7FDB2280278B009DFDCC /* pcre */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF7FDC2280278B009DFDCC /* internal.h */,
+				7BDF7FDD2280278B009DFDCC /* pcreposix.h */,
+				7BDF7FDE2280278B009DFDCC /* pcre.m */,
+				7BDF7FDF2280278B009DFDCC /* config.h */,
+				7BDF7FE02280278B009DFDCC /* pcre.h */,
+				7BDF7FE12280278B009DFDCC /* pcreposix.c */,
+				7BDF7FE22280278B009DFDCC /* chartables.c */,
+				7BDF7FE32280278B009DFDCC /* study.c */,
+			);
+			path = pcre;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BDF7F6022802718009DFDCC /* Privoxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BDF7F8222802719009DFDCC /* Build configuration list for PBXNativeTarget "Privoxy" */;
+			buildPhases = (
+				7BDF7F5D22802718009DFDCC /* Sources */,
+				7BDF7F5E22802718009DFDCC /* Frameworks */,
+				7BDF7F5F22802718009DFDCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Privoxy;
+			productName = Privoxy;
+			productReference = 7BDF7F6122802718009DFDCC /* Privoxy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BDF7F7822802719009DFDCC /* PrivoxyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BDF7F8522802719009DFDCC /* Build configuration list for PBXNativeTarget "PrivoxyUITests" */;
+			buildPhases = (
+				7BDF7F7522802719009DFDCC /* Sources */,
+				7BDF7F7622802719009DFDCC /* Frameworks */,
+				7BDF7F7722802719009DFDCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BDF7F7B22802719009DFDCC /* PBXTargetDependency */,
+			);
+			name = PrivoxyUITests;
+			productName = PrivoxyUITests;
+			productReference = 7BDF7F7922802719009DFDCC /* PrivoxyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BDF7F5922802718009DFDCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = xuqg;
+				TargetAttributes = {
+					7BDF7F6022802718009DFDCC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					7BDF7F7822802719009DFDCC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7BDF7F6022802718009DFDCC;
+					};
+				};
+			};
+			buildConfigurationList = 7BDF7F5C22802718009DFDCC /* Build configuration list for PBXProject "Privoxy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BDF7F5822802718009DFDCC;
+			productRefGroup = 7BDF7F6222802718009DFDCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BDF7F6022802718009DFDCC /* Privoxy */,
+				7BDF7F7822802719009DFDCC /* PrivoxyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BDF7F5F22802718009DFDCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDF80042280278B009DFDCC /* cgi-error-404 in Resources */,
+				7BDF801D2280278B009DFDCC /* cgi-error-file in Resources */,
+				7BDF7FF82280278B009DFDCC /* default.action in Resources */,
+				7BDF801A2280278B009DFDCC /* edit-actions-list-button in Resources */,
+				7BDF7FFA2280278B009DFDCC /* cgi-error-modified in Resources */,
+				7BDF80072280278B009DFDCC /* toggle-mini in Resources */,
+				7BDF80132280278B009DFDCC /* edit-actions-list in Resources */,
+				7BDF7FFC2280278B009DFDCC /* no-such-domain in Resources */,
+				7BDF80102280278B009DFDCC /* no-server-data in Resources */,
+				7BDF7FFF2280278B009DFDCC /* cgi-error-disabled in Resources */,
+				7BDF801B2280278B009DFDCC /* blocked in Resources */,
+				7BDF7F7122802719009DFDCC /* LaunchScreen.storyboard in Resources */,
+				7BDF800A2280278B009DFDCC /* show-request in Resources */,
+				7BDF801F2280278B009DFDCC /* trust in Resources */,
+				7BDF800C2280278B009DFDCC /* edit-actions-list-section in Resources */,
+				7BDF80142280278B009DFDCC /* forwarding-failed in Resources */,
+				7BDF80112280278B009DFDCC /* connect-failed in Resources */,
+				7BDF7FFD2280278B009DFDCC /* edit-actions-remove-url-form in Resources */,
+				7BDF7F6E22802719009DFDCC /* Assets.xcassets in Resources */,
+				7BDF80152280278B009DFDCC /* untrusted in Resources */,
+				7BDF80052280278B009DFDCC /* edit-actions-add-url-form in Resources */,
+				7BDF80062280278B009DFDCC /* cgi-style.css in Resources */,
+				7BDF80212280278B009DFDCC /* user.action in Resources */,
+				7BDF80162280278B009DFDCC /* edit-actions-url-form in Resources */,
+				7BDF80122280278B009DFDCC /* toggle in Resources */,
+				7BDF7FF62280278B009DFDCC /* default.filter in Resources */,
+				7BDF80022280278B009DFDCC /* mod-title in Resources */,
+				7BDF800F2280278B009DFDCC /* cgi-error-bad-param in Resources */,
+				7BDF7FF92280278B009DFDCC /* edit-actions-for-url in Resources */,
+				7BDF800D2280278B009DFDCC /* default in Resources */,
+				7BDF800E2280278B009DFDCC /* cgi-error-parse in Resources */,
+				7BDF801C2280278B009DFDCC /* client-tags in Resources */,
+				7BDF7FF52280278B009DFDCC /* configs.txt in Resources */,
+				7BDF801E2280278B009DFDCC /* user.filter in Resources */,
+				7BDF80002280278B009DFDCC /* url-info-osd.xml in Resources */,
+				7BDF80192280278B009DFDCC /* mod-local-help in Resources */,
+				7BDF7FFE2280278B009DFDCC /* connection-timeout in Resources */,
+				7BDF80082280278B009DFDCC /* edit-actions-list-url in Resources */,
+				7BDF800B2280278B009DFDCC /* show-url-info in Resources */,
+				7BDF80182280278B009DFDCC /* mod-unstable-warning in Resources */,
+				7BDF80172280278B009DFDCC /* mod-support-and-service in Resources */,
+				7BDF7FFB2280278B009DFDCC /* show-status-file in Resources */,
+				7BDF80032280278B009DFDCC /* edit-actions-for-url-filter in Resources */,
+				7BDF80202280278B009DFDCC /* match-all.action in Resources */,
+				7BDF80012280278B009DFDCC /* show-status in Resources */,
+				7BDF7FF72280278B009DFDCC /* config in Resources */,
+				7BDF7F6C22802718009DFDCC /* Main.storyboard in Resources */,
+				7BDF80092280278B009DFDCC /* cgi-error-file-read-only in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDF7F7722802719009DFDCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BDF7F5D22802718009DFDCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDF802F2280278B009DFDCC /* chartables.c in Sources */,
+				7BDF80252280278B009DFDCC /* cgi.c in Sources */,
+				7BDF8039228027AD009DFDCC /* ProxyManager.m in Sources */,
+				7BDF802E2280278B009DFDCC /* pcreposix.c in Sources */,
+				7BDF80292280278B009DFDCC /* gateway.c in Sources */,
+				7BDF80362280278B009DFDCC /* ssplit.c in Sources */,
+				7BDF7FF22280278B009DFDCC /* pcrs.c in Sources */,
+				7BDF80242280278B009DFDCC /* filters.c in Sources */,
+				7BDF80312280278B009DFDCC /* deanimate.c in Sources */,
+				7BDF80342280278B009DFDCC /* client-tags.c in Sources */,
+				7BDF7FF42280278B009DFDCC /* fuzz.c in Sources */,
+				7BDF80282280278B009DFDCC /* errlog.c in Sources */,
+				7BDF80262280278B009DFDCC /* loaders.c in Sources */,
+				7BDF802C2280278B009DFDCC /* urlmatch.c in Sources */,
+				7BDF80222280278B009DFDCC /* parsers.c in Sources */,
+				7BDF7F6922802718009DFDCC /* ViewController.m in Sources */,
+				7BDF80232280278B009DFDCC /* loadcfg.c in Sources */,
+				7BDF7F7422802719009DFDCC /* main.m in Sources */,
+				7BDF802A2280278B009DFDCC /* actions.c in Sources */,
+				7BDF802B2280278B009DFDCC /* jcc.m in Sources */,
+				7BDF80322280278B009DFDCC /* cgisimple.c in Sources */,
+				7BDF7F6622802718009DFDCC /* AppDelegate.m in Sources */,
+				7BDF802D2280278B009DFDCC /* pcre.m in Sources */,
+				7BDF80272280278B009DFDCC /* encode.c in Sources */,
+				7BDF80302280278B009DFDCC /* study.c in Sources */,
+				7BDF7FF12280278B009DFDCC /* list.c in Sources */,
+				7BDF80332280278B009DFDCC /* cgiedit.c in Sources */,
+				7BDF7FF32280278B009DFDCC /* miscutil.c in Sources */,
+				7BDF80352280278B009DFDCC /* jbsockets.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDF7F7522802719009DFDCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDF7F7E22802719009DFDCC /* PrivoxyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BDF7F7B22802719009DFDCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BDF7F6022802718009DFDCC /* Privoxy */;
+			targetProxy = 7BDF7F7A22802719009DFDCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BDF7F6A22802718009DFDCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BDF7F6B22802718009DFDCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BDF7F6F22802719009DFDCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BDF7F7022802719009DFDCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BDF7F8022802719009DFDCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7BDF7F8122802719009DFDCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BDF7F8322802719009DFDCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XX23L264Q;
+				INFOPLIST_FILE = Privoxy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuqg.Privoxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BDF7F8422802719009DFDCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XX23L264Q;
+				INFOPLIST_FILE = Privoxy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuqg.Privoxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BDF7F8622802719009DFDCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XX23L264Q;
+				INFOPLIST_FILE = PrivoxyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuqg.PrivoxyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Privoxy;
+			};
+			name = Debug;
+		};
+		7BDF7F8722802719009DFDCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XX23L264Q;
+				INFOPLIST_FILE = PrivoxyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuqg.PrivoxyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Privoxy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BDF7F5C22802718009DFDCC /* Build configuration list for PBXProject "Privoxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BDF7F8022802719009DFDCC /* Debug */,
+				7BDF7F8122802719009DFDCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BDF7F8222802719009DFDCC /* Build configuration list for PBXNativeTarget "Privoxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BDF7F8322802719009DFDCC /* Debug */,
+				7BDF7F8422802719009DFDCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BDF7F8522802719009DFDCC /* Build configuration list for PBXNativeTarget "PrivoxyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BDF7F8622802719009DFDCC /* Debug */,
+				7BDF7F8722802719009DFDCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BDF7F5922802718009DFDCC /* Project object */;
+}
